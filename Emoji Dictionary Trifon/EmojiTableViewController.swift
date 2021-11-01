@@ -26,7 +26,7 @@ class EmojiTableViewController: UITableViewController {
         
         
 
-        cell.textLabel?.text = emojis[indexPath.row]
+        cell.textLabel?.text = "\(emojis[indexPath.row]) \(emojis[indexPath.row].unicodeScalars.first!.properties.name!.capitalized)"
         
         //print(indexPath.row)
 
